@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorGreen"
+        android:orientation="vertical"
+        android:id="@+id/linearlayout_top">
+
+        <ImageView
+            android:id="@+id/Image_headPortrait"
+            android:layout_width="97dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/headportrail"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:text="易书"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/TextView_yishu" />
+            <ImageView
+                android:id="@+id/Image_sexWoman"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/woman"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:text="修改学校信息"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/TextView_schooltop" />
+
+
+        <TextView
+            android:text="修改学院信息"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/TextView_academytop" />
+        <GridLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            </GridLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:padding="0dp">
+
+        <TextView
+            android:text="新消息通知"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_newsInform"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/tiao"
+            tools:layout_marginTop="20dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:text="清除缓存"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_free"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/tiao"
+            android:paddingLeft="10dp" />
+        <TextView
+            android:text="推荐给好友"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_advise"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+
+
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/tiao"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:text="使用条款与推荐政策"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tiaoyue"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/tiao"
+            tools:paddingLeft="10dp" />
+        <TextView
+            android:text="关于易书"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_about"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:background="@drawable/tiao"
+            android:paddingLeft="10dp" />
+        </LinearLayout>
+
+
+
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
+<Button
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGreen"
+    android:text="退出当前账号"
+    android:textSize="18sp"
+    android:layout_gravity="bottom"
+    android:gravity="center" />
+</LinearLayout>
+</LinearLayout>

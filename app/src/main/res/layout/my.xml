@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:background="#eeeeee">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:background="@color/colorGreen"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ly_top">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:id="@+id/linearlayout_top">
+
+        <ImageView
+            android:id="@+id/Image_headPortrait"
+            android:layout_width="97dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/headportrail"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:text="易书"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/TextView_yishu" />
+            <ImageView
+                android:id="@+id/Image_sexWoman"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/woman"
+                />
+        </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:text="修改学校信息"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/TextView_schooltop" />
+
+
+        <TextView
+            android:text="修改学院信息"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/TextView_academytop" />
+        <TableLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="0,1,2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="卖书"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="借书"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="买书"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button android:layout_width="wrap_content"
+            android:text="我的心愿"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:layout_marginRight="20dp"
+            tools:background="@drawable/butt" />
+        <Button android:layout_width="wrap_content"
+            android:text="我的书籍"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:textSize="20sp"
+            android:textColor="@color/colorGreen"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

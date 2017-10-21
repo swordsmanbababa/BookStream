@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.swordsman.bookstream.MainActivity">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/colorGreen"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout_top">
+
+    <ImageView
+        android:id="@+id/Image_headPortrait"
+        android:layout_width="97dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/headportrail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:text="易书"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/TextView_yishu" />
+        <ImageView
+            android:id="@+id/Image_sexWoman"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/woman"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:text="修改学校信息"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/TextView_schooltop" />
+
+
+    <TextView
+        android:text="修改学院信息"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/TextView_academytop" />
+
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout_center"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/text"
+        android:layout_below="@+id/linearlayout_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/name"
+            android:layout_below="@+id/textview_schoolinfom"
+            android:layout_alignLeft="@+id/textview_schoolinfom"
+            android:id="@+id/imageView_name"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            app:srcCompat="@drawable/woman_g"
+            android:layout_below="@id/imageView_name"
+            android:layout_alignLeft="@id/imageView_name"
+            android:id="@+id/imageView_sex"
+            android:layout_marginBottom="2dp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/birthday"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/imageView_sex"
+            android:layout_alignLeft="@+id/imageView_sex"
+            android:id="@+id/imageView_birthdate"
+            android:layout_marginBottom="2dp"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/home"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/imageView_birthdate"
+            android:layout_alignLeft="@+id/imageView_birthdate"
+            android:id="@+id/imageView_home"
+            android:layout_marginBottom="2dp"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:layout_marginRight="40dp"
+            android:id="@+id/textview_school"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_name"
+            android:layout_alignBottom="@id/imageView_name"
+            />
+        <TextView
+            android:id="@+id/textview_acomody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_sex"
+            android:layout_alignBottom="@id/imageView_sex"
+            />
+        <TextView
+            android:id="@+id/textview_newindate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出生日期"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_birthdate"
+            android:layout_alignBottom="@id/imageView_birthdate"
+            />
+        <TextView
+            android:id="@+id/textview_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家乡"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_home"
+            android:layout_alignBottom="@id/imageView_home"
+            />
+        <TextView
+            android:id="@+id/TextView_school"
+            android:text="请填入"
+            android:layout_alignBaseline="@id/textview_school"
+            android:layout_toRightOf="@id/textview_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/TextView_sex"
+            android:text="请填入"
+            android:layout_alignBaseline="@id/textview_acomody"
+            android:layout_alignLeft="@id/TextView_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/TextView_birthdate"
+            android:text="请填入"
+            android:layout_alignBaseline="@id/textview_newindate"
+            android:layout_alignLeft="@id/TextView_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/TextView_home"
+            android:text="请填入"
+            android:layout_alignBaseline="@id/textview_class"
+            android:layout_alignLeft="@id/TextView_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:textSize="20sp"
+            android:id="@+id/textview_schoolinfom"
+            android:text="个人信息"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/next_2"
+            android:id="@+id/imageButton"
+            android:layout_below="@+id/imageView_birthdate"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="44dp"
+            android:layout_marginEnd="44dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/text"
+        android:layout_below="@id/relativelayout_center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:textSize="20sp"
+            android:id="@+id/textview_schoolinfombottom"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="学校信息" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/name"
+            android:layout_below="@+id/textview_schoolinfombottom"
+            android:layout_alignLeft="@+id/textview_schoolinfombottom"
+            android:id="@+id/imageView_namebottom"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            app:srcCompat="@drawable/woman_g"
+            android:layout_below="@id/imageView_namebottom"
+            android:layout_alignLeft="@id/imageView_namebottom"
+            android:id="@+id/imageView_sexbottom"
+            android:layout_marginBottom="2dp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/birthday"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/imageView_sexbottom"
+            android:layout_alignLeft="@+id/imageView_sexbottom"
+            android:id="@+id/imageView_birthdatebottom"
+            android:layout_marginBottom="2dp"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/home"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/imageView_birthdatebottom"
+            android:layout_alignLeft="@+id/imageView_birthdatebottom"
+            android:id="@+id/imageView_homebottom"
+            android:layout_marginBottom="2dp"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学校"
+            android:layout_marginRight="70dp"
+            android:id="@+id/textview_schoolbottom"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_namebottom"
+            android:layout_alignBottom="@id/imageView_namebottom"
+            />
+        <TextView
+            android:id="@+id/textview_acomodybottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学院"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_sexbottom"
+            android:layout_alignBottom="@id/imageView_sexbottom"
+            />
+        <TextView
+            android:id="@+id/textview_newindatebottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入学年份"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_birthdatebottom"
+            android:layout_alignBottom="@id/imageView_birthdatebottom"
+            />
+        <TextView
+            android:id="@+id/textview_classbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_homebottom"
+            android:layout_alignBottom="@id/imageView_homebottom"
+            />
+        <TextView
+            android:id="@+id/TextView_schoolbottom"
+
+            android:layout_alignBaseline="@id/textview_schoolbottom"
+            android:layout_toRightOf="@id/textview_schoolbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/TextView_newindate"
+            android:text="请填入"
+            android:layout_alignBaseline="@id/textview_newindatebottom"
+            android:layout_alignLeft="@id/TextView_schoolbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/TextView_acamedy"
+            android:text="请填入"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+
+            android:layout_below="@+id/imageView_namebottom"
+            android:layout_alignLeft="@+id/TextView_schoolbottom"
+            android:layout_alignStart="@+id/TextView_schoolbottom" />
+
+        <TextView
+            android:id="@+id/TextView_class"
+            android:text="请填入"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_below="@+id/textview_newindatebottom"
+            android:layout_alignLeft="@+id/TextView_newindate"
+            android:layout_alignStart="@+id/TextView_newindate" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            app:srcCompat="@drawable/woman_g"
+            android:layout_below="@id/imageView_homebottom"
+            android:layout_alignLeft="@id/imageView_namebottom"
+            android:id="@+id/imageView_accomdation"
+            />
+        <TextView
+            android:id="@+id/textview_acomodation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宿舍"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageView_accomdation"
+            android:layout_alignBottom="@id/imageView_accomdation"
+            />
+
+        <TextView
+            android:id="@+id/TextView_accomdate"
+            android:text="请填入"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_alignLeft="@id/TextView_class"
+            android:layout_alignStart="@id/TextView_newindate"
+            android:layout_below="@+id/textview_classbottom" />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
